@@ -28,6 +28,7 @@ body
   margin: 0 auto
 
 
+
 .title
   font-family: $font-suisse-reg
   font-size: 66px
@@ -148,7 +149,7 @@ body
       margin: 0 0 25px 0
     &-image
       max-width: 225px
-      margin: 0 0 17px 0
+      margin: 0 0 20px 0
     &-text,
     &-qr_text
       font-family: $font-suisse-med
@@ -181,7 +182,8 @@ body
     &-qr_text
       max-width: 250px
     &-two
-      margin-top: 94px
+      margin-top: 91px
+
 
 //android-download
 .download-android
@@ -189,6 +191,11 @@ body
   position: relative
   padding: 0 0 250px 0
   overflow: hidden
+
+  .container
+    max-width: 1385px
+    padding: 0 50px
+    position: relative
 
   .para-ios_2
     display: none
@@ -227,8 +234,8 @@ body
     max-width: 950px
     position: absolute
     //right: calc(100% - 1000px)
-    left: 70px
-    top: 122px
+    left: 0
+    top: -96px
     z-index: 1
 
   &__item
