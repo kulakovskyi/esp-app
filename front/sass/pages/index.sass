@@ -247,6 +247,16 @@ body
     &:not(:last-child)
       margin: 0 0 9px 0
 
+  &__list
+    list-style-type: none
+    counter-reset: num
+    padding: 0
+    li::before
+      counter-increment: num
+      content: counter(num) '. '
+      font-family: $font-suisse-reg
+      color: $blue
+
 //down
 .down
   background: $blue
